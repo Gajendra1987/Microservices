@@ -8,4 +8,8 @@ Micro-services using spring boot training conducted at RPS consulting on 12th Ju
 2. Architectureal Important points - 
     a. Service Failover (Load balancing, circuit breaking pattern)
     b. Maintainance
-    c. Security 
+    c. Security
+    d. Choreography vs Orchestration
+    	The choreography describes the interactions between multiple services, where as orchestration represents control from one party's perspective.
+	This means that a choreography differs from an orchestration with respect to where the logic that controls the interactions between the services
+	involved should reside.
