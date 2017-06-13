@@ -23,3 +23,7 @@ Docker commands to deploy the JAR which we generated from spring boot project
 
 	3. Issue the command docker build -t IMAGENAME:latest .  (There is DOT at the end)
 
+	4. Once Download is completed issue the command docker run IMAGE_NAME or docker run -p 8080:8080 IMAGE_NAME
+
+Spring Boot with Service Discovery using Eureka Server
+

@@ -1,0 +1,58 @@
+### Spring properties
+# Service registers under this name
+spring:
+  application:
+    name: travel-cityservice
+
+    
+  datasource:
+    dataSourceClassName: org.h2.Driver
+    url: jdbc:h2:file:~/h2/app_db;DB_CLOSE_ON_EXIT=FALSE
+    databaseName:
+    serverName:
+    username: root
+    password: secret
+    cachePrepStmts: true
+    prepStmtCacheSize: 250
+    prepStmtCacheSqlLimit: 2048
+    useServerPrepStmts: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: h2
+    openInView: false
+    show_sql: true
+    generate-ddl: false
+    hibernate:
+        ddl-auto: update
+        naming-strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
+    properties:
+                hibernate.cache.use_second_level_cache: false
+                hibernate.cache.use_query_cache: false
+                hibernate.generate_statistics: true
+                org.hibernate.envers.audit_table_suffix: _history
+
+http:
+    cache:
+        timeToLiveInDays: 31
+
+cache:
+    timeToLiveSeconds: 3600
+    ehcache:
+        maxBytesLocalHeap: 256M
+
+# Discovery Server Access
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:1111/eureka/
+
+# HTTP Server (Tomcat) Port
+server: 
+  port: 3333
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+error:
+  whitelabel:
+    enabled: false
+

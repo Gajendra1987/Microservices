@@ -1,0 +1,6 @@
+com\wellsforgo\banking\SpringBootDataRestWellsForgo\data\jpa\service\CityRepository.class
+com\wellsforgo\banking\SpringBootDataRestWellsForgo\data\jpa\domain\City.class
+com\wellsforgo\banking\SpringBootDataRestWellsForgo\data\jpa\service\CitySearchCriteria.class
+com\wellsforgo\banking\SpringBootDataRestWellsForgo\data\jpa\domain\Hotel.class
+com\wellsforgo\banking\SpringBootDataRestWellsForgo\data\jpa\service\HotelRepository.class
+com\wellsforgo\banking\SpringBootDataRestWellsForgo\data\jpa\SampleDataRestApplication.class
