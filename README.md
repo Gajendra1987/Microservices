@@ -27,3 +27,9 @@ Docker commands to deploy the JAR which we generated from spring boot project
 
 Spring Boot with Service Discovery using Eureka Server
 
+
+OAUTH AUthentication
+
+	Instead of calling to proxy service directly or discovering the service from service registry, request has to go to the OAUTH server. access 
+	token will be given with expiry and then using the token service should be invoked. 
+
