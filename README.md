@@ -26,6 +26,9 @@ Docker commands to deploy the JAR which we generated from spring boot project
 	4. Once Download is completed issue the command docker run IMAGE_NAME or docker run -p 8080:8080 IMAGE_NAME
 
 Spring Boot with Service Discovery using Eureka Server
+	1. Every service should register itself with Eureka server, check the eureka console and it should display your services as registered service.
+	2. Zuul is the API gateway and needs to be configured with Eureka to discover the service and route. Direct routing is also possible using URL.
+	3. While downloading the project from SpringInitilizr, make sure that we add Eureka servver and Zuul Proxy as dependency.
 
 
 OAUTH AUthentication
